@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 248.0, 264.0, 806.0, 480.0 ],
+		"rect" : [ 392.0, 305.0, 806.0, 480.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -19,6 +19,20 @@
 		"objectsnaponopen" : 0,
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 751.0, 191.0, 336.0, 256.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 24.0, 192.0, 136.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -145,7 +159,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 8.0, 8.0, 280.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 16.0, 152.0, 120.0 ],
+					"presentation_rect" : [ 72.0, 0.0, 112.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -170,7 +184,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 8.0, 280.158419966697693, 255.762375712394714 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 16.0, 152.0, 120.0 ]
+					"presentation_rect" : [ 72.0, 0.0, 112.0, 24.0 ]
 				}
 
 			}
