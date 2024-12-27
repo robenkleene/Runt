@@ -2,10 +2,5 @@
 autowatch = 1;
 
 function bang() {
-	 post("Bang");
-}
-
-function output(text) {
-	outlet(0, text);
-	outlet(0, "\n");
+	outlet(0, "Hello, World!");
 }
