@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 392.0, 305.0, 632.0, 677.0 ],
+		"rect" : [ 611.0, 305.0, 632.0, 677.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -169,7 +169,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 528.0, 336.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 48.0, 232.0, 136.0 ]
+					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ]
 				}
 
 			}
@@ -443,7 +443,7 @@
 
 			}
  ],
-		"originid" : "pat-70",
+		"originid" : "pat-84",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
