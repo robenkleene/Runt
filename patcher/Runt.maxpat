@@ -20,6 +20,18 @@
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 296.0, 8.0, 144.0, 40.0 ],
+					"text" : "Make sure this is the minimum size to show the filename after dropping!"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -64,7 +76,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 216.0, 288.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.0, 8.0, 40.0, 15.0 ],
+					"presentation_rect" : [ 0.0, 32.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -157,7 +169,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 528.0, 336.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 32.0, 232.0, 136.0 ]
+					"presentation_rect" : [ 0.0, 48.0, 232.0, 136.0 ]
 				}
 
 			}
@@ -203,7 +215,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 120.0, 289.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 8.0, 32.0, 15.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -245,7 +257,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 168.0, 288.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.0, 8.0, 40.0, 15.0 ],
+					"presentation_rect" : [ 0.0, 16.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -288,7 +300,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 8.0, 8.0, 280.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 8.0, 112.0, 24.0 ],
+					"presentation_rect" : [ 48.0, 0.0, 176.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -313,7 +325,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 8.0, 280.158419966697693, 255.762375712394714 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 8.0, 112.0, 24.0 ]
+					"presentation_rect" : [ 48.0, 0.0, 176.0, 48.0 ]
 				}
 
 			}
@@ -431,7 +443,7 @@
 
 			}
  ],
-		"originid" : "pat-605",
+		"originid" : "pat-70",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
