@@ -175,18 +175,25 @@
 			}
 , 			{
 				"box" : 				{
+					"filename" : "runt_template.js",
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 400.0, 97.0, 20.0 ],
+					"patching_rect" : [ 8.0, 400.0, 100.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "runt_template.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js runt_template.js"
+					"text" : "v8 runt_template.js",
+					"textfile" : 					{
+						"filename" : "runt_template.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -443,7 +450,7 @@
 
 			}
  ],
-		"originid" : "pat-84",
+		"originid" : "pat-130",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
@@ -463,8 +470,6 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "runt_template.js",
-				"bootpath" : "/Users/Shared/Max 9/Packages/runt/javascript",
-				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
