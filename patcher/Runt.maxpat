@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 611.0, 305.0, 632.0, 677.0 ],
+		"rect" : [ 181.0, 297.0, 945.0, 677.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -19,6 +19,78 @@
 		"objectsnaponopen" : 0,
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 448.0, 79.0, 20.0 ],
+					"text" : "prepend Error:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 280.0, 408.0, 51.0, 20.0 ],
+					"text" : "route v8:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 280.0, 376.0, 60.0, 20.0 ],
+					"text" : "route error"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 480.0, 86.0, 20.0 ],
+					"text" : "prepend append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 312.0, 63.0, 20.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 344.0, 32.0, 20.0 ],
+					"text" : "error"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"linecount" : 3,
@@ -102,7 +174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 168.0, 320.0, 30.0, 20.0 ],
+					"patching_rect" : [ 168.0, 312.0, 30.0, 20.0 ],
 					"text" : "t b b"
 				}
 
@@ -162,6 +234,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"linecount" : 7,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -169,7 +242,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 528.0, 336.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ]
+					"presentation_linecount" : 9,
+					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ],
+					"text" : "Error: runt_template.js: SyntaxError: Invalid or unexpected token, line 2 error\rError: Source line: outlet(0, \"Hello, World!);\" error\rError: no function bang [runt_template.js] error\rHello, World!\rHello, World!\rHello, World!\r"
 				}
 
 			}
@@ -204,7 +279,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 320.0, 35.0, 20.0 ],
+					"patching_rect" : [ 120.0, 312.0, 35.0, 20.0 ],
 					"text" : "open"
 				}
 
@@ -248,7 +323,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 184.0, 352.0, 50.0, 20.0 ],
+					"patching_rect" : [ 176.0, 344.0, 50.0, 20.0 ],
 					"text" : "compile"
 				}
 
@@ -353,8 +428,59 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -450,7 +576,7 @@
 
 			}
  ],
-		"originid" : "pat-130",
+		"originid" : "pat-16",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
@@ -470,6 +596,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "runt_template.js",
+				"bootpath" : "/Users/Shared/Max 9/Packages/runt/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
