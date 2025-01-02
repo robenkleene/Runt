@@ -234,7 +234,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"linecount" : 7,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -242,9 +241,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 528.0, 336.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 9,
-					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ],
-					"text" : "Error: runt_template.js: SyntaxError: Invalid or unexpected token, line 2 error\rError: Source line: outlet(0, \"Hello, World!);\" error\rError: no function bang [runt_template.js] error\rHello, World!\rHello, World!\rHello, World!\r"
+					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ]
 				}
 
 			}
@@ -576,7 +573,7 @@
 
 			}
  ],
-		"originid" : "pat-16",
+		"originid" : "pat-62",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
