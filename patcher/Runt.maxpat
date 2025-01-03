@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 399.0, 100.0, 945.0, 677.0 ],
+		"rect" : [ 399.0, 100.0, 1060.0, 884.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -19,6 +19,18 @@
 		"objectsnaponopen" : 0,
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 344.0, 376.0, 150.0, 29.0 ],
+					"text" : "Only display errors prefixed with `error v8:`"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -592,7 +604,7 @@
 
 			}
  ],
-		"originid" : "pat-88",
+		"originid" : "pat-114",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
