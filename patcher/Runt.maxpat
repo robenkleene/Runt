@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 399.0, 100.0, 945.0, 677.0 ],
+		"rect" : [ 399.0, 100.0, 1060.0, 884.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -20,13 +20,25 @@
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 14,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 232.0, 368.0, 150.0, 163.0 ],
+					"text" : "Setting the message to `compile <file-path>` is a hack to force reloading. This is supposed to work automatically with just the `compile` message. Test by removing the connection to the right outlet of the `compile` `message`, then runnng JavaScript, editing it again and running again. If it runs the updated code, then that connection can be removed permenantly."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.0, 280.0, 176.0, 29.0 ],
-					"text" : "`live.drop` sends a `none` message on load if there's no file."
+					"patching_rect" : [ 456.0, 408.0, 150.0, 29.0 ],
+					"text" : "Only display errors prefixed with `error v8:`"
 				}
 
 			}
@@ -49,7 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 536.0, 79.0, 20.0 ],
+					"patching_rect" : [ 392.0, 480.0, 79.0, 20.0 ],
 					"text" : "prepend Error:"
 				}
 
@@ -61,7 +73,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 280.0, 504.0, 51.0, 20.0 ],
+					"patching_rect" : [ 392.0, 440.0, 51.0, 20.0 ],
 					"text" : "route v8:"
 				}
 
@@ -73,7 +85,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 280.0, 472.0, 60.0, 20.0 ],
+					"patching_rect" : [ 392.0, 408.0, 60.0, 20.0 ],
 					"text" : "route error"
 				}
 
@@ -85,7 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 568.0, 86.0, 20.0 ],
+					"patching_rect" : [ 392.0, 512.0, 86.0, 20.0 ],
 					"text" : "prepend append"
 				}
 
@@ -97,7 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 408.0, 63.0, 20.0 ],
+					"patching_rect" : [ 392.0, 304.0, 63.0, 20.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -109,7 +121,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 416.0, 32.0, 20.0 ],
+					"patching_rect" : [ 392.0, 376.0, 32.0, 20.0 ],
 					"text" : "error"
 				}
 
@@ -132,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 536.0, 67.0, 18.0 ],
+					"patching_rect" : [ 128.0, 464.0, 67.0, 18.0 ],
 					"text" : "Strip quotes"
 				}
 
@@ -144,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 536.0, 66.0, 20.0 ],
+					"patching_rect" : [ 56.0, 464.0, 66.0, 20.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -156,7 +168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 216.0, 384.0, 32.0, 20.0 ],
+					"patching_rect" : [ 216.0, 312.0, 32.0, 20.0 ],
 					"text" : "clear"
 				}
 
@@ -170,7 +182,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 216.0, 360.0, 44.0, 15.0 ],
+					"patching_rect" : [ 216.0, 288.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 32.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -198,7 +210,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 168.0, 384.0, 30.0, 20.0 ],
+					"patching_rect" : [ 168.0, 312.0, 30.0, 20.0 ],
 					"text" : "t b b"
 				}
 
@@ -210,7 +222,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 504.0, 150.0, 29.0 ],
+					"patching_rect" : [ 48.0, 432.0, 150.0, 29.0 ],
 					"text" : "Add a new line after each append"
 				}
 
@@ -224,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 8.0, 504.0, 38.0, 21.0 ],
+					"patching_rect" : [ 8.0, 432.0, 38.0, 21.0 ],
 					"text" : "t 13 s"
 				}
 
@@ -238,7 +250,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 8.0, 536.0, 37.0, 22.0 ],
+					"patching_rect" : [ 8.0, 464.0, 37.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -250,7 +262,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 568.0, 86.0, 20.0 ],
+					"patching_rect" : [ 8.0, 496.0, 86.0, 20.0 ],
 					"text" : "prepend append"
 				}
 
@@ -263,7 +275,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 8.0, 600.0, 336.0, 256.0 ],
+					"patching_rect" : [ 8.0, 544.0, 336.0, 256.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 48.0, 232.0, 112.0 ]
 				}
@@ -277,7 +289,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 472.0, 100.0, 20.0 ],
+					"patching_rect" : [ 8.0, 400.0, 100.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -300,7 +312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 384.0, 35.0, 20.0 ],
+					"patching_rect" : [ 120.0, 312.0, 35.0, 20.0 ],
 					"text" : "open"
 				}
 
@@ -316,7 +328,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 120.0, 361.0, 44.0, 15.0 ],
+					"patching_rect" : [ 120.0, 289.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -344,7 +356,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 176.0, 416.0, 50.0, 20.0 ],
+					"patching_rect" : [ 176.0, 368.0, 50.0, 20.0 ],
 					"text" : "compile"
 				}
 
@@ -358,7 +370,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 168.0, 360.0, 44.0, 15.0 ],
+					"patching_rect" : [ 168.0, 288.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 16.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -386,7 +398,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 320.0, 97.0, 20.0 ],
+					"patching_rect" : [ 8.0, 312.0, 97.0, 20.0 ],
 					"text" : "prepend compile"
 				}
 
@@ -564,6 +576,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"order" : 0,
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -604,7 +625,7 @@
 
 			}
  ],
-		"originid" : "pat-98",
+		"originid" : "pat-142",
 		"parameters" : 		{
 			"obj-18" : [ "Compile", "Compile", 0 ],
 			"obj-29" : [ "Drop", "live.drop", 0 ],
